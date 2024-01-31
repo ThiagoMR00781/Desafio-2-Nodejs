@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de CRUD</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+                monospace;
+
+            background-color: #d4d4d4;
+            padding: 0 2px;
+            border-radius: 4px;
+        }
+
+        .challenge {
+            width: 70vw;
+            padding: 2rem;
+            background: #cdc5dd;
+            border-radius: 1rem;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="challenge">
+        O desafio de hoje consiste em fazer esse CRUD funcionar corretamente.
+        Os dados serão salvos, obtidos, alterados e removidos a partir do array <code>DB</code>.
+
+        <p>Para executar as ações serão utilizados os métodos HTTP: <code>GET</code>, <code>POST</code>,
+            <code>PUT</code> e <code>DELETE</code>
+        </p>
+
+        <p>Também, para desafio serão utilizados conceitos do javascript como <code>Array.find</code>,
+            <code>Array.splice</code> e <code>Array.push</code>.</p>
+
+        <p>Recomendo usar o <code>Postman</code> para fazer a chamada dos endpoints. Endpoints com métodos diferente de GET não são facilmente executados a partir do navegador</p>
+
+        <p>
+            É essencial que existam 5 rotas:
+            <ul>
+                <li><code>GET /pessoa</code>: Obtém a lista completa de pessoas.</li>
+                <li><code>GET /pessoa/:id</code>: Obtém uma pessoa pelo ID ou retorna um erro 404 caso nao encontre.</li>
+                <li><code>POST /pessoa</code>: Envia os dados da pessoa a serem salvos e retorna a pessoa já cadastrada no DB.</li>
+                <li><code>PUT /pessoa/:id</code>: Envia o ID pela rota e os dados da pessoa a serem atualizados a partir do BODY e retorna a pessoa atualizada.</li>
+                <li><code>DELETE /pessoa/:id</code>: Envia o ID pela rota, exclui essa pessoa e retorna a pessoa excluída.</li>
+            </ul>
+        </p>
+    </div>
+</body>
+
+</html>
